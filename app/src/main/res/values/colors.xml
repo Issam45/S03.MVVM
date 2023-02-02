@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="midnight_blue">#18206f</color>
+    <color name="space_cadet">#17255a</color>
+    <color name="champagne">#f5e2c8</color>
+    <color name="new_york_pink">#d88373</color>
+    <color name="carnelian">#bd1e1e</color>
+
+
 </resources>

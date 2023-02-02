@@ -1,7 +1,8 @@
-package ca.qc.cstj.example.mvvm
+package ca.qc.cstj.example.mvvm.presentation.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ca.qc.cstj.example.mvvm.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
