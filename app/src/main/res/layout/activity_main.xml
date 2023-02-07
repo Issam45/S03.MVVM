@@ -37,7 +37,7 @@
         tools:text="Kerjo" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txvLevel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
@@ -152,23 +152,28 @@
         app:layout_constraintTop_toBottomOf="@+id/txvCube" />
 
     <Switch
-        android:id="@+id/isTraining"
+        android:id="@+id/swtTraining"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
         android:text="Training"
-        app:layout_constraintTop_toTopOf="@+id/textView13"
-        tools:layout_editor_absoluteX="298dp" />
+        android:textColor="@color/midnight_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/sldRevolution"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:id="@+id/imvPlanet"
+        android:layout_width="256dp"
+        android:layout_height="0dp"
         android:layout_marginTop="4dp"
         android:src="@drawable/planet"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btnStart"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -182,32 +187,40 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Revolution"
+        app:layout_constraintBottom_toBottomOf="@+id/sldRevolution"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <com.google.android.material.slider.Slider
-        android:id="@+id/slider"
-        android:layout_width="163dp"
+        android:id="@+id/sldRevolution"
+        android:layout_width="0dp"
         android:layout_height="62dp"
-        app:layout_constraintEnd_toStartOf="@+id/isTraining"
+        android:stepSize="1.0"
+        android:valueFrom="1.0"
+        android:valueTo="5.0"
+        android:value="3.0"
+        app:layout_constraintEnd_toStartOf="@+id/swtTraining"
         app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toTopOf="@+id/textView13" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:id="@+id/imvRocket"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:rotation="-41"
         android:src="@drawable/rocket"
-        tools:layout_editor_absoluteX="275dp"
-        tools:layout_editor_absoluteY="475dp" />
+        tools:layout_editor_absoluteX="363dp"
+        tools:layout_editor_absoluteY="469dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Start"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="399dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sldRevolution" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

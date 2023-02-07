@@ -18,7 +18,7 @@ data class Pilot(var name: String, var life: Int, var cube: Int = 0) {
     fun fly(revolutions: Int, isTraining: Boolean = false) {
         if(!isTraining) {
 
-            _experience += revolutions * Random.nextInt(1,2 * level + 1)
+            _experience += revolutions * Random.nextInt(1,2 * level + 2)
             shield -= Random.nextInt(2)
             life -= Random.nextInt(0, 2)
             cube += Random.nextInt(0,2 * level + 1)
